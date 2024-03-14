@@ -9,3 +9,5 @@ for line in file:
 print(myList)
 
 file.close()
+
+print(content)
