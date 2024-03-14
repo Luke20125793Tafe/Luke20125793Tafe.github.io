@@ -2,6 +2,8 @@ numbers = []
 sumNum = 0
 countNum = 0
 keepNumbering = 0
+largestNum = 0
+smallestNum = None
 
 while keepNumbering < 20 :
     addNum = input("Enter a number: ")
@@ -20,7 +22,10 @@ while keepNumbering < 20 :
 for num in numbers:
     sumNum = sumNum + num
     countNum = countNum + 1
-    avgNum = sumNum / countNum
+    if num > largestNum:
+        largestNum = num
+    elif smallestNum == None or num < smallestNum :
+        smallestNum = num
     
-print(sumNum, " ", countNum, " ", avgNum)
+print(sumNum, " ", countNum, " ", smallestNum, ":", largestNum)
     
