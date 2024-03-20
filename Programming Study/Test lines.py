@@ -1,4 +1,3 @@
-
-greet = 'Hello Bob'
-
-greet.find('z')
+fruit = 'Banana'
+fruit[0] = 'b'
+print(fruit)
