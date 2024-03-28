@@ -26,7 +26,7 @@ openFile = open(fileName)
 for line in openFile :
     words = line.split()
     #print('Debug:', words)
-    if len(words) < 2 or words[0] != 'From' : 
+    if len(words) < 2 or words[0] != 'From ' : 
         continue
     else:
         emailFrom = words[1]
